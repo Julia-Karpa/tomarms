@@ -75,8 +75,8 @@ nav {
   font-weight: bold;
   margin-bottom: 30px;
   color: #021c2c;
-  text-shadow: 2px 2px 5px #0f669c;
-  text-decoration-line: underline;
+  text-shadow: 2px 2px 2px #0f669c;
+ 
 }
 
 .about-content{
@@ -115,12 +115,22 @@ flex: 1;
 margin-left: 20px;
 text-align: center; 
 border: 10px solid #0f669c;
-background-color: #ffffff;
+background-color: #b5d9ef;
+padding: 20px;
 }
 
 .blog{
   text-align: center;
 }
+
+.blogButton {
+  background-color: #021c2c;
+  color: white;
+  padding: 15px 25px;
+  text-decoration: none;
+
+  }
+
 
 
 @media screen and (max-width: 768px){
