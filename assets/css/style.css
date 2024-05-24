@@ -167,3 +167,8 @@ footer li {
   color: #ffffff;
   font-size: 260%;
 }
+
+/*resize the picture on the books page*/
+#bookPhoto {
+  height: 700px;
+}
