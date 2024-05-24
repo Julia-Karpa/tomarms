@@ -4,12 +4,15 @@
   padding: 0;
   box-sizing: border-box;
   font-family: sans-serif;
-  
+  }
 
-}
+
+ body {
+background-color: #b5d9ef;
+ } 
 
 /* Set font family (you can choose your own) */
-body {
+#indexBody {
   font-family: Arial, sans-serif;
   background: linear-gradient(#b5d9ef,#69a2c5, #0f669c);
 }
@@ -17,7 +20,7 @@ body {
 /* Style the navbar */
 nav {
   background-color: #0f669c;
-  color: #fff;
+  color: #ffffff;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -134,9 +137,9 @@ footer {
   background-color: #021c2c;
   margin-top: auto; /* Align the footer to the bottom */
  text-align: center;
-
- 
-
+ position: fixed;
+ bottom: 0;
+ width: 100%;
 }
 
 
