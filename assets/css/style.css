@@ -1,34 +1,156 @@
+/* Reset default margin and padding */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+  
+
+}
+
+/* Set font family (you can choose your own) */
 body {
-    background-color: black;
-    font-family: Verdana, sans-serif;
-    font-size: 16px;
-    color: gray;
-    text-align: center;
+  font-family: Arial, sans-serif;
+  background: linear-gradient(#b5d9ef,#69a2c5, #0f669c);
+}
+
+/* Style the navbar */
+nav {
+  background-color: #0f669c;
+  color: #fff;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+}
+
+.logo h2 {
+  font-size: 40px;
+}
+
+/* Style the navigation links */
+.nav-items ul {
+  list-style: none;
+  display: flex;
+}
+
+.nav-items ul li {
+  margin-right: 20px;
+}
+
+.nav-items ul li a {
+  text-decoration: none;
+  color: #fff;
+  transition: color 0.3s;
+}
+
+.nav-items ul li a:hover {
+  color: #021c2c;
+}
+
+/* Make the navbar responsive */
+@media screen and (max-width: 600px) {
+  .nav-items ul {
+      display: none;
   }
 
-  .nav {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 10px;
-    
+  .nav-items ul.overview {
+      display: block;
   }
+}
 
-  .nav a {
-    text-decoration: none;
-    color: gray;
-  }
+.container{
+  width: 80%;
+  margin: 50px auto;
+  padding: 20px;
+}  
 
-  .nav a:hover {
-    text-decoration: underline;
-    color: blue;
-  }
+.title{
+  margin-left: 20px;
+  text-align: center;
+  font-size: 35px;
+  font-weight: bold;
+  margin-bottom: 30px;
+  color: #021c2c;
+  text-shadow: 2px 2px 5px #0f669c;
+  text-decoration-line: underline;
+}
 
-  .nav a.active {
-    text-decoration: underline;
-    color: blue;
-  }
+.about-content{
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  font-size: 20px;
+  line-height: 1.6;
+  color: #021c2c;
+  
+  
+}
 
-  .li {
-    list-style: none;
+.image{
+  flex: 1;
+  margin-right: 20px;
+  overflow: hidden;
+  border-radius: 10px;
+ 
+ 
+ }
+
+.image img{
+  width: 100%;
+  transition: transform 0.3s ease;
+ 
+ 
+}
+
+.image:hover img{
+  transform: scale(1.1);
+}
+
+.content{
+flex: 1;
+margin-left: 20px;
+text-align: center; 
+border: 10px solid #0f669c;
+background-color: #ffffff;
+}
+
+.blog{
+  text-align: center;
+}
+
+
+@media screen and (max-width: 768px){
+  .about-content{
+    flex-direction: column;
   }
+  .image, .content{
+    margin: 0;
+    margin-bottom: 20px;
+  }
+}
+  
+footer {
+  background-color: #021c2c;
+  margin-top: auto; /* Align the footer to the bottom */
+ text-align: center;
+
+ 
+
+}
+
+
+
+footer li {
+  display: inline-block;
+  margin: 0 20px;
+  vertical-align: middle;
+  color: #ffffff;
+  
+  
+}
+
+#LinkedIn {
+  color: #ffffff;
+  font-size: 260%;
+}
