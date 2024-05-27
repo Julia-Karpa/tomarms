@@ -11,7 +11,7 @@
 background-color: #b5d9ef;
  } 
 
-/* Set font family (you can choose your own) */
+/* Set font family*/
 #indexBody {
   font-family: Arial, sans-serif;
   background: linear-gradient(#b5d9ef,#69a2c5, #0f669c);
@@ -61,13 +61,13 @@ nav {
       display: block;
   }
 }
-
+/*styling index.html*/
 .container{
   width: 80%;
   margin: 50px auto;
   padding: 20px;
 }  
-
+/*styling index.html*/
 .title{
   margin-left: 20px;
   text-align: center;
@@ -78,7 +78,7 @@ nav {
   text-shadow: 2px 2px 2px #0f669c;
  
 }
-
+/*styling index.html*/
 .about-content{
   display: flex;
   flex-wrap: wrap;
@@ -89,23 +89,24 @@ nav {
   
   
 }
-
+/*styling index.html image*/
 .image{
   flex: 1;
   margin-right: 20px;
   overflow: hidden;
   border-radius: 10px;
- 
- 
+
+  
  }
 
+ /*styling index.html and books.html image*/
 .image img{
   width: 100%;
   transition: transform 0.3s ease;
  
  
 }
-
+/*styling index.html and books.html image*/
 .image:hover img{
   transform: scale(1.1);
 }
@@ -118,11 +119,11 @@ border: 10px solid #0f669c;
 background-color: #b5d9ef;
 padding: 20px;
 }
-
+/*styling blog.html text*/
 .blog{
   text-align: center;
 }
-
+/*styling blog.html button*/
 .blogButton {
   background-color: #021c2c;
   color: white;
@@ -142,7 +143,7 @@ padding: 20px;
     margin-bottom: 20px;
   }
 }
-  
+/*Footer*/  
 footer {
   background-color: #021c2c;
   margin-top: auto; /* Align the footer to the bottom */
@@ -168,7 +169,7 @@ footer li {
   font-size: 260%;
 }
 
-/*resize the picture on the books page*/
+/*Position text on books.html*/
 h1{
   text-align: center;
 }
