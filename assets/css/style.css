@@ -8,59 +8,82 @@
 
 
  body {
-background-color: #b5d9ef;
+/*background-color: #b5d9ef;*/
+background-image: url(../images/map1.jpg);
+background-repeat: no-repeat;
+background-size: cover;
+
+
+
  } 
 
 /* Set font family*/
 #indexBody {
-  font-family: Arial, sans-serif;
-  background: linear-gradient(#b5d9ef,#69a2c5, #0f669c);
+font-family: Arial, sans-serif;
+background-image: url(../images/map1.jpg);
+background-repeat: no-repeat;
+background-size: cover;
 }
 
-/* Style the navbar */
-nav {
-  background-color: #0f669c;
+/* Add a black background color to the top navigation */
+.topnav {
+  background-color: #021c2c;
+  overflow: hidden;
+}
+
+/* Style the links inside the navigation bar */
+.topnav a {
+  float: left;
+  display: block;
   color: #ffffff;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 10px 20px;
-}
-
-.logo h2 {
-  font-size: 40px;
-}
-
-/* Style the navigation links */
-.nav-items ul {
-  list-style: none;
-  display: flex;
-}
-
-.nav-items ul li {
-  margin-right: 20px;
-}
-
-.nav-items ul li a {
+  text-align: center;
+  padding: 14px 16px;
   text-decoration: none;
-  color: #fff;
-  transition: color 0.3s;
+  font-size: 20px;
 }
 
-.nav-items ul li a:hover {
+/* Change the color of links on hover */
+.topnav a:hover {
+  background-color: #ffffff;
   color: #021c2c;
 }
 
-/* Make the navbar responsive */
-@media screen and (max-width: 600px) {
-  .nav-items ul {
-      display: none;
-  }
+/* Add an active class to highlight the current page */
+.topnav a.active {
+  background-color: #0f669c;
+  color: white;
+}
 
-  .nav-items ul.overview {
-      display: block;
+/* Hide the link that should open and close the topnav on small screens */
+.topnav .icon {
+  display: none;
+}
+
+/* When the screen is less than 600 pixels wide, hide all links, except for the first one ("Home"). Show the link that contains should open and close the topnav (.icon) */
+@media screen and (max-width: 600px) {
+  .topnav a:not(:first-child) {display: none;}
+  .topnav a.icon {
+    float: right;
+    display: block;
   }
 }
+
+/* The "responsive" class is added to the topnav with JavaScript when the user clicks on the icon. This class makes the topnav look good on small screens (display the links vertically instead of horizontally) */
+@media screen and (max-width: 600px) {
+  .topnav.responsive {position: relative;}
+  .topnav.responsive a.icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  .topnav.responsive a {
+    float: none;
+    display: block;
+    text-align: left;
+  }
+}
+
+
 /*styling index.html*/
 .container{
   width: 80%;
@@ -71,11 +94,13 @@ nav {
 .title{
   margin-left: 20px;
   text-align: center;
-  font-size: 35px;
+  font-size: 40px;
   font-weight: bold;
   margin-bottom: 30px;
-  color: #021c2c;
-  text-shadow: 2px 2px 2px #0f669c;
+  color: #ffffff;
+  text-shadow: 5px 2px 2px #021c2c;
+
+  
  
 }
 /*styling index.html*/
@@ -119,30 +144,45 @@ border: 10px solid #0f669c;
 background-color: #b5d9ef;
 padding: 20px;
 }
-/*styling blog.html text*/
+/*styling blog.html title*/
 .blog{
   text-align: center;
+  
+
 }
 /*styling blog.html button*/
 .blogButton {
   background-color: #021c2c;
-  color: white;
+  color: #ffffff;
   padding: 15px 25px;
   text-decoration: none;
+  display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50px;
+   }
 
-  }
+/* add background color to main text on blog.html page because of the map image*/
+.blogContent p {
+border: 10px solid #0f669c;
+background-color: #b5d9ef;
+padding: 20px;
+}
 
 
 
-@media screen and (max-width: 768px){
-  .about-content{
+@media screen and (max-width: 768px) {
+  .about-content {
     flex-direction: column;
   }
+
   .image, .content{
     margin: 0;
     margin-bottom: 20px;
   }
 }
+
+
 /*Footer*/  
 footer {
   background-color: #021c2c;
@@ -161,7 +201,6 @@ footer li {
   vertical-align: middle;
   color: #ffffff;
   
-  
 }
 
 #LinkedIn {
@@ -172,12 +211,18 @@ footer li {
 /*Position text on books.html*/
 h1{
   text-align: center;
+  font-size: 40px;
+  font-weight: bold;
+  margin-bottom: 30px;
+  color: #ffffff;
+  text-shadow: 5px 2px 2px #021c2c;
+
 }
 
-.contactText{
-  position: fixed; /* or absolute */
-  top: 40%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  text-align: center;
+.contactMain {
+text-align: center; 
+border: 10px solid #0f669c;
+background-color: #b5d9ef;
+padding: 20px;
+font-size: 18px;
 }
